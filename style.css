@@ -1,0 +1,52 @@
+body {
+    background-image: url("img.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  h1{
+    margin-bottom: 20px;
+  }
+  
+  .search-container {
+    margin-top: 20px;
+  }
+  
+  #location-input {
+    padding: 5px;
+    width: 200px;
+  }
+  
+  #search-btn {
+    padding: 5px 10px;
+  }
+  
+  .weather-details {
+    margin-top: 20px;
+  }
+  
+  .weather-card {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .weather-card h2 {
+    margin-top: 0;
+  }
+  
+  .weather-card p {
+    margin-bottom: 5px;
+  }
+  h2{
+    margin-bottom: 10px;
+  }
+  p{
+    margin: 5px 0;
+  }
