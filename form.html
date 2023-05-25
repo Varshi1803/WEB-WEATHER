@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>firebase form auth</title>
+  <link rel="stylesheet" href="form.css">
+  <script type="module" src="form.js"></script>
+</head>
+<body>
+  <div class="center-box" id="login-div">
+    <h2>Login</h2>
+    <input type="email" id="login-email" class="text-field" name="login-email" placeholder="Email" required/><br>
+    <input type="password" id="login-password" class="text-field" name="login-password" placeholder="Password" required/><br>
+    <button id="login-btn" class="btn-style">Login</button><br>
+    <button id="reg-btn" class="an-btn">Don't have an account? REGISTER</button>
+  </div>
+
+  <div class="center-box" id="register-div">
+    <h2>Register</h2>
+    <input type="email" id="register-email" class="text-field" name="register-email" placeholder="Email" required/><br>
+    <input type="password" id="register-password" class="text-field" name="register-password" placeholder="Password" required/><br>
+    <button id="register-btn" class="btn-style">Register</button><br>
+    <button id="log-btn" class="an-btn">Have an account? LOGIN</button>
+  </div>
+
+  <div id="result-box">
+    <h3 id="result"></h3><br>
+    <button id="log-out-btn" class="btn-style">LOGOUT</button>
+  </div>
+
+  <script>
+    // Assuming you have functions for handling successful login and registration, you can add the following code:
+
+    function handleSuccessfulLogin() {
+      // Redirect to the index page after successful login
+      window.location.href = "index.html";
+    }
+
+    function handleSuccessfulRegistration() {
+      // Redirect to the index page after successful registration
+      window.location.href = "index.html";
+    }
+
+    // Example of how to handle a successful login
+    // You can modify this based on your actual login logic
+    document.getElementById("login-btn").addEventListener("click", function() {
+      // Perform login logic here
+      // If login is successful, call the handleSuccessfulLogin function
+      handleSuccessfulLogin();
+    });
+
+    // Example of how to handle a successful registration
+    // You can modify this based on your actual registration logic
+    document.getElementById("register-btn").addEventListener("click", function() {
+      // Perform registration logic here
+      // If registration is successful, call the handleSuccessfulRegistration function
+      handleSuccessfulRegistration();
+    });
+  </script> 
+</body>
+</html>
